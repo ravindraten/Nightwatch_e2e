@@ -1,0 +1,21 @@
+{
+  "name": "nightwatch_e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NIGHTWATCH_VERSION=1.7.12 nightwatch",
+    "test-chrome": "NIGHTWATCH_VERSION=1.7.12 nightwatch -e chrome --reporter html-reporter.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^96.0.0",
+    "cross-env":"^7.0.3",
+    "nightwatch": "^1.7.12",
+    "handlebars": "^4.7.7",
+    "fs": "^0.0.1-security",
+    "path":"^0.12.7"
+  }
+}

@@ -1,0 +1,19 @@
+For Unit testing:
+    - One Assertion in One Test Method(Test should always check 1  use-case only)
+    - Minimize Test Interdependency(Test should run in any order, no relation or dependencies between tests)
+    - Automate the Unit tests
+    - Good naming convention(In case of failure QA can understand which module is failing)
+    - No logic in the test ( keep the test simple without any conditions, loops etc)
+    - Deterministic test (The test should give the same result everytime when you run until unless the code is changed)
+
+For Integration testing(smoke tests):
+    - Perform this test to make sure integrated module/component is working properly
+        ( check shopping basket, Favourite Brand, pagination, loading of results) 
+    - This can help to find bugs at an earlier state
+    - If not all modules are developed, mock the data to test the same
+
+For E2E tesing:
+    - I would prioritize the End Use of the feature.(Design the test case accourdingly).
+    - I will try avoiding edge cases
+    - try to categorize and run/maintian test in order
+    - Always try to have the set-up of test environment and tear down automated

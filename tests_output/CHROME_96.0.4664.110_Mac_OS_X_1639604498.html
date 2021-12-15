@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Results - CHROME 96.0.4664.110 Mac OS X </title>
+
+    <style>
+        html,
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 10px 40px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        td {
+            padding: 7px;
+            border-top: none;
+            border-left: 1px black solid;
+            border-bottom: 1px black solid;
+            border-right: none;
+        }
+
+        td.pass {
+            color: #003b07;
+            background: #86e191;
+        }
+
+        td.skip {
+            color: #7d3a00;
+            background: #ffd24a;
+        }
+
+        td.fail {
+            color: #5e0e00;
+            background: #ff9c8a;
+        }
+
+        tr:last-child {
+            border-top: 1px black solid;
+        }
+
+        tr:last-child td {
+            border-top: 1px black solid;
+        }
+
+        tr:first-child td {
+            border-top: 1px black solid;
+        }
+
+        td:last-child {
+            border-right: 1px black solid;
+        }
+
+        tr.overview td {
+            padding-bottom: 0px;
+            border-bottom: none;
+        }
+
+        tr.overview.last td {
+            padding-bottom: 3px;
+        }
+
+        ul.assertions {
+            list-style-type: none;
+        }
+
+        span.error {
+            color: #AD2B2B;
+        }
+
+        span.success {
+            color: #53891E;
+        }
+
+        .stacktrace {
+            display: inline;
+        }
+
+        .stacktrace code {
+            display: none;
+        }
+
+        #nightwatch-logo {
+            position: absolute;
+            top: 20px;
+            right: 33px;
+            width: 70px;
+            height: 75px;
+            background: transparent url('http://nightwatchjs.org/img/logo-nightwatch.png') no-repeat;
+            background-size: 70px 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Test Results</h1>
+
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr class="overview">
+            <td colspan="3" title="CHROME 96.0.4664.110 Mac OS X ">
+                <strong>Browser:</strong> CHROME 96.0.4664.110 Mac OS X </td>
+        </tr>
+        <tr class="overview">
+            <td colspan="3">
+                <strong>Timestamp:</strong> Wed Dec 15 2021 22:41:38 GMT+0100 (Central European Standard Time)</td>
+        </tr>
+        <tr class="overview last">
+            <td colspan="3">
+                <strong>Tests:</strong> 4
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td class="pass">
+                <strong>3</strong> passed</td>
+            <td class="skip">
+                <strong>0</strong> errors</td>
+            <td class="fail">
+                <strong>1</strong> failures</td>
+        </tr>
+    </table>
+
+    <h2>e2e</h2>
+
+    <h3>Login</h3>
+    <ul class="assertions">
+        <li>
+            <span class="success">&#10004;</span>
+             Testing if element [0;33m&lt;div[data-testid&#x3D;&#x27;login-page-welcome-message&#x27;]&gt;[0m contains text [0;33m&#x27;Welcome back, choose your preferred way to continue.&#x27;[0m [0;90m(69ms)[0m          </li>
+        <li>
+            <span class="success">&#10004;</span>
+             Element &lt;input[name&#x3D;&quot;email&quot;]&gt; was visible after 41 milliseconds.          </li>
+        <li>
+            <span class="success">&#10004;</span>
+             Element &lt;input[name&#x3D;&quot;password&quot;]&gt; was visible after 21 milliseconds.          </li>
+        <li>
+            <span class="error">&#10006;</span>
+ Timed out while waiting for element &lt;.mainHeader__userAccountMenu&gt; to be present for 10000 milliseconds. - expected [0;32m&quot;visible&quot;[0m but got: [0;31m&quot;not found&quot;[0m [0;90m(10193ms)[0m  Expected &quot;visible&quot; but got: &quot;not found&quot;          </li>
+    </ul>
+
+    <p>
+        <span class="error">
+            <strong>FAILED:</strong>
+        </span>
+        <span class="error">
+            <strong>1</strong>
+        </span> assertions failed and
+        <span class="success">
+            <strong>3</span>
+        </strong> passed. (17.40s) 
+    </p>
+     
+    <h4>skipped</h4>
+    <ul>
+        <li>SearchBrand</li>
+        <li>Select1stProduct</li>
+        <li>Select desired size and add to cart</li>
+        <li>Go to the cart and click on checkout</li>
+        <li>Fill in the address details and click on continue to pay</li>
+        <li>Logout</li>
+    </ul>
+
+    <hr> 
+
+    <div id="nightwatch-logo"></div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('div.stacktrace').on('click', 'a', function (evt) {
+                evt.preventDefault();
+
+                var $link = $(this);
+                var $code = $link.parent().find('code');
+
+                $code.is(':visible') ? $link.text('hide stacktrace') :
+                    $link.text('view stacktrace');
+
+                $code.toggle();
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -15,7 +15,7 @@ var addressCommands = {
             .setValue('@postCode', '5508SK')
             .setValue('@houseNumber', '1')
             .click("@lastName")
-            .pause(1000)
+            //.pause(1000)
             .waitForElementVisible('@addressBlock')
             .getLocationInView('@continueToPay', function(result){
                 this.execute('scrollTo(0, '+result.value.y+')')

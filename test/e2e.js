@@ -46,7 +46,7 @@ module.exports = {
         var addressPage = browser.page.address()
         addressPage
             .address()
-            //.assert.containsText(".payment-methods-table h4.review-order-title","Payment method")
+            .assert.containsText(".payment-methods-table h4.review-order-title","Payment method")
     },
 
 
